@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var ageLabel: UILabel!
     @IBOutlet weak var breedLabel: UILabel!
+   var myTigers:[Tiger] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +34,7 @@ class ViewController: UIViewController {
         myTiger2.name = "Tigress"
         myTiger2.age = 2
         myTiger2.breed = "Indochinese Tiger"
-        myTiger2.image = UIImage(named: "IndochineseTigerjpg")
+        myTiger2.image = UIImage(named: "IndochineseTiger.jpg")
         
         myImageView.image = myTiger2.image
         nameLabel.text = "Name: \(myTiger2.name)"
@@ -44,13 +45,14 @@ class ViewController: UIViewController {
         myTiger3.name = "Jacob"
         myTiger3.age = 4
         myTiger3.breed = "Malayan Tiger"
-        myTiger3.image = UIImage(named: "MalayanTigerjpg")
+        myTiger3.image = UIImage(named: "MalayanTiger.jpg")
         
         myImageView.image = myTiger3.image
         nameLabel.text = "Name: \(myTiger3.name)"
         ageLabel.text = "Age: \(myTiger3.age)"
         breedLabel.text = "Breed: \(myTiger3.breed)"
         
+        myTigers += [myTiger, myTiger2, myTiger3]
     }
 
     override func didReceiveMemoryWarning() {
@@ -59,7 +61,55 @@ class ViewController: UIViewController {
     }
 
     @IBAction func nextBarButtonOnPress(sender: UIBarButtonItem) {
+        let randomIndex = Int(arc4random_uniform(UInt32(myTigers.count)))
+        let tiger = myTigers[randomIndex]
+        
+//        myImageView.image = tiger.image
+//        nameLabel.text = tiger.name
+//        ageLabel.text = "\(tiger.age)"
+//        breedLabel.text = tiger.breed
+        
+        UIView.transitionWithView(self.view, duration: 2, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: {
+            self.myImageView.image = tiger.image
+            self.nameLabel.text = tiger.name
+            self.ageLabel.text = "\(tiger.age)"
+            self.breedLabel.text = tiger.breed
+            }, completion: {
+                (finished: Bool) -> () in
+        })
+        
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
