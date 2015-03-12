@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DEA070381AB1937400C5E5FB /* LionCub.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA070371AB1937400C5E5FB /* LionCub.swift */; };
+		DEA0703A1AB193DD00C5E5FB /* Lions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA070391AB193DD00C5E5FB /* Lions.swift */; };
 		DEDC33831AAF5F4700AA0AE8 /* BengalTiger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DEDC337B1AAF5F4700AA0AE8 /* BengalTiger.jpg */; };
 		DEDC33841AAF5F4700AA0AE8 /* IndochineseTiger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DEDC337C1AAF5F4700AA0AE8 /* IndochineseTiger.jpg */; };
 		DEDC33851AAF5F4700AA0AE8 /* Lion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DEDC337D1AAF5F4700AA0AE8 /* Lion.jpg */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DEA070371AB1937400C5E5FB /* LionCub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LionCub.swift; path = ../LionCub.swift; sourceTree = "<group>"; };
+		DEA070391AB193DD00C5E5FB /* Lions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lions.swift; sourceTree = "<group>"; };
 		DEDC337B1AAF5F4700AA0AE8 /* BengalTiger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BengalTiger.jpg; sourceTree = "<group>"; };
 		DEDC337C1AAF5F4700AA0AE8 /* IndochineseTiger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IndochineseTiger.jpg; sourceTree = "<group>"; };
 		DEDC337D1AAF5F4700AA0AE8 /* Lion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Lion.jpg; sourceTree = "<group>"; };
@@ -112,7 +116,9 @@
 			children = (
 				DEFDF3CA1AAF54350006282F /* AppDelegate.swift */,
 				DEFDF3CC1AAF54350006282F /* ViewController.swift */,
+				DEA070391AB193DD00C5E5FB /* Lions.swift */,
 				DEFDF3EA1AAF59340006282F /* tiger.swift */,
+				DEA070371AB1937400C5E5FB /* LionCub.swift */,
 				DEFDF3CE1AAF54350006282F /* Main.storyboard */,
 				DEFDF3D11AAF54350006282F /* Images.xcassets */,
 				DEFDF3D31AAF54350006282F /* LaunchScreen.xib */,
@@ -256,8 +262,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEFDF3CD1AAF54350006282F /* ViewController.swift in Sources */,
+				DEA0703A1AB193DD00C5E5FB /* Lions.swift in Sources */,
 				DEFDF3EB1AAF59340006282F /* tiger.swift in Sources */,
 				DEFDF3CB1AAF54350006282F /* AppDelegate.swift in Sources */,
+				DEA070381AB1937400C5E5FB /* LionCub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

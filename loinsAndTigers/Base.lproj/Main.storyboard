@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -22,13 +22,22 @@
                                     <rect key="frame" x="13" y="28" width="375" height="667"/>
                                 </variation>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random Fact" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8R-xW-sk9">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="28" y="514" width="326" height="65"/>
+                                </variation>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6E-uH-glH">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="28" y="496" width="344" height="21"/>
+                                    <rect key="frame" x="28" y="427" width="344" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWO-4H-cnF">
@@ -37,7 +46,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="28" y="525" width="344" height="21"/>
+                                    <rect key="frame" x="28" y="456" width="344" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQ0-bc-EMe">
@@ -46,21 +55,21 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="28" y="554" width="344" height="21"/>
+                                    <rect key="frame" x="28" y="485" width="344" height="21"/>
                                 </variation>
                             </label>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5JP-mX-CQO">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="4mT-8U-7Pi"/>
-                                    <barButtonItem title="Next" id="I5q-sF-wfB">
+                                    <barButtonItem title="Next  " id="I5q-sF-wfB">
                                         <connections>
                                             <action selector="nextBarButtonOnPress:" destination="vXZ-lx-hvc" id="Ez0-YA-frH"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="13" y="595" width="362" height="44"/>
+                                    <rect key="frame" x="11" y="627" width="373" height="44"/>
                                 </variation>
                             </toolbar>
                         </subviews>
@@ -68,6 +77,7 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Twd-VP-UCT"/>
+                                <exclude reference="y8R-xW-sk9"/>
                                 <exclude reference="D6E-uH-glH"/>
                                 <exclude reference="nWO-4H-cnF"/>
                                 <exclude reference="GQ0-bc-EMe"/>
@@ -77,6 +87,7 @@
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="Twd-VP-UCT"/>
+                                <include reference="y8R-xW-sk9"/>
                                 <include reference="D6E-uH-glH"/>
                                 <include reference="nWO-4H-cnF"/>
                                 <include reference="GQ0-bc-EMe"/>
@@ -89,6 +100,7 @@
                         <outlet property="breedLabel" destination="GQ0-bc-EMe" id="fVk-Yt-buO"/>
                         <outlet property="myImageView" destination="Twd-VP-UCT" id="xgE-fZ-1ni"/>
                         <outlet property="nameLabel" destination="D6E-uH-glH" id="u5Q-dW-0Y3"/>
+                        <outlet property="randomFactLabel" destination="y8R-xW-sk9" id="8Fs-9x-KGa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
